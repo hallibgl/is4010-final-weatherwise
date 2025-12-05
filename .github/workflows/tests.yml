@@ -8,6 +8,9 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    env:
+      OPENWEATHER_API_KEY: "TEST_KEY_FOR_CI"
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
